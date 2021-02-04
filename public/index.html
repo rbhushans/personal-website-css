@@ -28,28 +28,37 @@
         </header>
 
         <section id="home-intro">
-            <h2 id="intro-intro">hi! my name is</h2>
-            <p id="intro-name"><b>Rohan Bhushan</b></p>
+            <div id="blur-container">
+                <video id="home-background" preload="auto" autoplay="true" loop="loop" muted="muted">
+                    <source src="assets/background.mp4" type="video/mp4">
+                    This browser does not support this video.
+                </video>
+            </div>
+
+            <div id="intro-text">
+                <h2 id="intro-intro">hi! my name is</h2>
+                <p id="intro-name"><b>Rohan Bhushan</b></p>
+            </div>
 
             <div class="card">
                 <h2>projects!</h2>
-                <p>select any of the projects to learn more</p>
+                <p>select any of my projects to learn more</p>
                 <a id="intro-more" class="more-button" href="about.html">More ></a>
-                <a href="">
+                <a href="projects.html#mask-bot">
                     <video id="sup-video" height="300" width="200" autoplay muted loop>
                         <source src="assets/RPReplay_Final1611356108.mp4">
                         <source src="assets/IMG_5228.jpeg">
                     </video>
                 </a>
                 
-                <a href="">
+                <a href="projects.html">
                     <picture id="mask-logo" height="300" width="200">
                         <source media="(min-width:650px)" srcset="assets/Mask Bot Logo.png">
                         <img src="assets/Mask Bot Logo.png" width="300" height="250">
                     </picture>
                 </a>
 
-                <a href="">
+                <a href="projects.html#sup">
                     <picture id="madlib-screen" height="300" width="200">
                         <source media="(min-width:650px)" srcset="assets/IMG_4782.jpeg">
                         <img src="assets/IMG_4782.jpeg" width="200" height="300">
@@ -62,7 +71,7 @@
 
         <main id="home-subsections">
                 <section class="home-section">
-                    <img class="home-subpic-left" src="assets/IMG_5228.jpeg" height="200" width="100">
+                    <img class="home-subpic" src="assets/IMG_5228.jpeg">
                     <div class="home-section-info">
                         <h2 class="home-subtitle">about me</h2>
                         <p class="home-subdescrip">I'm currently a third year Computer Science student at 
@@ -76,7 +85,7 @@
             
             
             <section class="home-section">
-                <img class="home-subpic-right" src="assets/IMG_5228.jpeg" height="200" width="100">
+                <img class="home-subpic" src="assets/IMG_5228.jpeg">
                 <div class="home-section-info">
                     <h2 class="home-subtitle">personal projects</h2>
                     <p class="home-subdescrip">Recently I developed an automated Twitter bot which uses a machine
@@ -89,7 +98,7 @@
             </section>
             
             <section class="home-section">
-                <img class="home-subpic-left" src="assets/IMG_5228.jpeg" height="200" width="100">
+                <img class="home-subpic" src="assets/IMG_5228.jpeg">
                 <div class="home-section-info">
                     <h2 class="home-subtitle">experience</h2>
                     <p class="home-subdescrip">I'm currently working as a Business Systems Analyst with UCSD Health, developing
@@ -97,7 +106,6 @@
                     </p>
                     <a class="more-button" href="experience.html">More ></a>
                 </div>
-                
             </section>
         </main>
         
