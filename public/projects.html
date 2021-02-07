@@ -31,7 +31,19 @@
 
         <main id="main-projects">
             <section class="project-card" id="mask-bot">
-                <img loading=lazy class="project-subpic" src="assets/maskbot2.GIF" alt="Mask bot">
+                <div class="extra-pic">
+                    <picture >
+                        <source media="(min-width: 900px)" srcset="assets/maskbot2.GIF">
+                        <source media="(min-width: 540px)" srcset="assets/maskbot2.GIF">
+                        <img loading=lazy class="project-subpic" src="assets/maskbot2.GIF" alt="Mask bot">
+                    </picture>
+                    <picture id="mask-bot-desktop">
+                        <source media="(min-width: 900px)" srcset="assets/Mask Bot Logo.png">
+                        <source media="(min-width: 540px)" srcset="assets/Mask Bot Logo.png">
+                        <img loading=lazy class="project-subpic" src="assets/Mask Bot Logo.png" alt="Mask bot logo">
+                    </picture>
+                </div>
+                
                 <div class="project-text">
                     <h2 class="project-title">Mask Bot</h2>
                     <p class="project-description">I developed an automated Twitter bot which uses replies to tweets with images of groups of people that are
@@ -47,7 +59,11 @@
             </section>
             
             <section class="project-card" id="sup">
-                <img id="sup-mobile" loading=lazy class="project-subpic" src="assets/IMG_5228.jpeg" alt="SUP-Home">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/sup_home_small.jpeg">
+                    <source media="(min-width: 540px)" srcset="assets/sup_home_small.jpeg">
+                    <img id="sup-mobile" loading=lazy class="project-subpic" src="assets/sup_home_small.jpeg" alt="SUP-Home">
+                </picture>
                 <div class="project-text">
                     <h2 class="project-title">Social University Platform</h2>
                     <p class="project-description">I created an iOS app using React Native, NodeJS, and Firebase to connect students 
@@ -60,12 +76,20 @@
                         <li class="proj-skill">Firebase</li>
                     </ul>
                 </div>
-                <img id="sup-desktop" loading=lazy class="project-subpic" src="assets/IMG_5228.jpeg" alt="SUP-Home">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/sup_home.jpeg">
+                    <source media="(min-width: 540px)" srcset="assets/sup_home_medium.jpeg">
+                    <img id="sup-desktop" loading=lazy class="project-subpic" src="assets/sup_home_small.jpeg" alt="SUP-Home">
+                </picture>
             </section>
             
             
             <section class="project-card" id="spotify-mad-libs">
-                <img loading=lazy class="project-subpic" src="assets/IMG_4782.jpeg" alt="Spotify Mad Libs Screen">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/spotify_mad.jpeg">
+                    <source media="(min-width: 540px)" srcset="assets/spotify_mad_medium.jpeg">
+                    <img loading=lazy class="project-subpic" src="assets/spotify_mad_small.jpeg" alt="Spotify Mad Libs Screen">
+                </picture>
                 <div class="project-text">
                     <h2 class="project-title">Spotify Mad Libs</h2>
                     <p class="project-description">Constructed a React/Node Web Application using the Spotify API, which displays amusing messages
@@ -81,7 +105,11 @@
             </section>
             
             <section class="project-card" id="football-analytics">
-                <img id="football-mobile" loading=lazy class="project-subpic" src="assets/football_betting.png">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="assets/football_betting_small.png">
+                    <source media="(min-width: 540px)" srcset="assets/football_betting_small.png">
+                    <img id="football-mobile" loading=lazy class="project-subpic" src="assets/football_betting_small.png">
+                </picture>
                 <div class="project-text">
                     <h2 class="project-title">Football Analytics and Odds Web Scraper</h2>
                     <p class="project-description">Using JavaScript, created an automated program to scrape statistics from 
@@ -91,7 +119,11 @@
                         <li class="proj-skill">javascript</li>
                     </ul>
                 </div>
-                <img id="football-desktop" loading=lazy class="project-subpic" src="assets/football_betting.png">
+                <picture>
+                    <source media="(min-width: 900px)" srcset="assets/football_betting.png">
+                    <source media="(min-width: 540px)" srcset="assets/football_betting_medium.png">
+                    <img id="football-desktop" loading=lazy class="project-subpic" src="assets/football_betting_small.png">
+                </picture>
             </section>
             
         </main>

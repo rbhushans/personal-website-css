@@ -29,20 +29,41 @@
         <h1 class="title">about</h1>
 
         <main id="about-grid">
-            <section class="about-me-block">
-                <img loading=lazy class="about-me-pic" src="assets/ucsd-health.png">
+            <section class="about-me-block" id="about-me-firstxs">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/headshot.JPG">
+                    <img class="about-me-pic" src="assets/headshot_medium.jpg" alt="Rohan Portrait">
+                </picture>
                 <div class="about-me-text">
                     <h2>about me</h2>
-                    <p>lots and lots about me</p>
+                    <p>I'm currently a third year undergraduate computer science student 
+                        at University of California, San Diego. I have detailed experience in coding
+                        in Java, C, C++, JavaScript, and Python. My expected graduation is 
+                        December 2021.
+                    </p>
                 </div>
             </section>
             
             <section class="about-me-block">
                 <div class="about-me-text">
                     <h2>interests and hobbies</h2>
-                    <p>specific interest and hobbies!</p>
+                    <ul id="interests-hobbies">
+                        <li>football</li>
+                        <li>I'm a huge Ravens fan, annd love to watch football whenever its on. 
+                            Specifically, I love to explore advanced statistics like EPA, CPOE, DVOA, 
+                            and more.</li>
+                        <li>chess</li>
+                        <li>Chess has been a consistent interest of mine, and I enjoy exploring different
+                            strategies and openings.</li>
+                        <li>baking</li>
+                        <li>I'm the vice president and co-founder of the baking club at UCSD.</li>
+                    </ul>
                 </div>
-                <img loading=lazy class="about-me-pic" src="assets/amazon_logo_1_.png">
+                <picture >
+                    <source media="(min-width: 900px)" srcset="assets/brownies.jpeg">
+                    <source media="(min-width: 540px)" srcset="assets/brownies_medium.jpeg">
+                    <img class="about-me-pic" src="assets/brownies_small.jpeg" alt="Rohan Portrait">
+                </picture>
             </section>
         </main>
 
