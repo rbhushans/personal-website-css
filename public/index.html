@@ -14,7 +14,7 @@
     <body>
         <header>
             <a href="index.html">
-                <img src="android-chrome-192x192.png" height="100" width="100">
+                <img id="header-logo" src="android-chrome-192x192.png" height="100" width="100">
             </a>
             <nav>
                 <ul id="header-ul">
@@ -22,7 +22,6 @@
                     <li class="header-li"><a href="projects.html">personal projects</a></li>
                     <li class="header-li"><a href="experience.html">experience</a></li>
                     <li class="header-li"><a href="contact.html">contact</a></li>
-                    <li class="header-li"></li>
                 </ul>
             </nav>
         </header>
@@ -40,34 +39,36 @@
                 <p id="intro-name"><b>Rohan Bhushan</b></p>
             </div>
 
-            <div class="card">
-                <h2>projects!</h2>
-                <p>select any of my projects to learn more</p>
-                <a id="intro-more" class="more-button" href="about.html">More ></a>
-                <a href="projects.html#mask-bot">
-                    <video id="sup-video" height="300" width="200" autoplay muted loop>
-                        <source src="assets/RPReplay_Final1611356108.mp4">
-                        <source src="assets/IMG_5228.jpeg">
-                    </video>
-                </a>
-                
-                <a href="projects.html">
-                    <picture id="mask-logo" height="300" width="200">
-                        <source media="(min-width:650px)" srcset="assets/Mask Bot Logo.png">
-                        <img src="assets/Mask Bot Logo.png" width="300" height="250">
-                    </picture>
-                </a>
-
-                <a href="projects.html#sup">
-                    <picture id="madlib-screen" height="300" width="200">
-                        <source media="(min-width:650px)" srcset="assets/IMG_4782.jpeg">
-                        <img src="assets/IMG_4782.jpeg" width="200" height="300">
-                    </picture>
-                </a>
-            </div>
+            
 
         </section>
 
+        <div class="card">
+            <h2>projects!</h2>
+            <p>select any of my projects to learn more</p>
+            <a id="intro-more" class="more-button" href="about.html">More ></a>
+        </div>
+
+        <a href="projects.html#mask-bot">
+            <video id="sup-video" height="300" width="200" autoplay muted loop>
+                <source src="assets/RPReplay_Final1611356108.mp4">
+                <source src="assets/IMG_5228.jpeg">
+            </video>
+        </a>
+        
+        <a href="projects.html">
+            <picture id="mask-logo" height="300" width="200">
+                <source media="(min-width:650px)" srcset="assets/Mask Bot Logo.png">
+                <img src="assets/Mask Bot Logo.png" width="300" height="250">
+            </picture>
+        </a>
+
+        <a href="projects.html#sup">
+            <picture id="madlib-screen" height="300" width="200">
+                <source media="(min-width:650px)" srcset="assets/IMG_4782.jpeg">
+                <img src="assets/IMG_4782.jpeg" width="200" height="300">
+            </picture>
+        </a>
 
         <main id="home-subsections">
                 <section class="home-section">
@@ -129,7 +130,7 @@
                 </ul>
             </div>
             
-            <div class="footer-center">
+            <div class="footer-center" id="footer-links">
                 <ul class="footer-link-list">
                     <li class="footer-link"><a href="index.html">home</a></li>
                     <li class="footer-link"><a href="about.html">about</a></li>
@@ -142,6 +143,7 @@
             <div class="footer-center">
                 <p id="footer-tag">Rohan Bhushan &copy; 2021</p>
             </div>
+            <br />
         </footer>
     
     </body>

@@ -11,7 +11,7 @@
         <link rel="manifest" href="/site.webmanifest">
         <link rel="stylesheet" href="styles/home.css" type="text/css">
     </head>
-    <body>
+    <body id="projects">
         <header>
             <a href="index.html">
                 <img src="android-chrome-192x192.png" height="100" width="100">
@@ -19,10 +19,9 @@
             <nav>
                 <ul id="header-ul">
                     <li class="header-li"><a href="about.html">about</a></li>
-                    <li class="header-li"><a href="projects.html">personal projects</a></li>
+                    <li class="header-li header-select"><a href="projects.html">personal projects</a></li>
                     <li class="header-li"><a href="experience.html">experience</a></li>
                     <li class="header-li"><a href="contact.html">contact</a></li>
-                    <li class="header-li"></li>
                 </ul>
             </nav>
         </header>
@@ -48,6 +47,7 @@
             </section>
             
             <section class="project-card" id="sup">
+                <img id="sup-mobile" loading=lazy class="project-subpic" src="assets/IMG_5228.jpeg" alt="SUP-Home">
                 <div class="project-text">
                     <h2 class="project-title">Social University Platform</h2>
                     <p class="project-description">I created an iOS app using React Native, NodeJS, and Firebase to connect students 
@@ -60,7 +60,7 @@
                         <li class="proj-skill">Firebase</li>
                     </ul>
                 </div>
-                <img loading=lazy class="project-subpic" src="assets/IMG_5228.jpeg" alt="SUP-Home">
+                <img id="sup-desktop" loading=lazy class="project-subpic" src="assets/IMG_5228.jpeg" alt="SUP-Home">
             </section>
             
             
@@ -81,6 +81,7 @@
             </section>
             
             <section class="project-card" id="football-analytics">
+                <img id="football-mobile" loading=lazy class="project-subpic" src="assets/football_betting.png">
                 <div class="project-text">
                     <h2 class="project-title">Football Analytics and Odds Web Scraper</h2>
                     <p class="project-description">Using JavaScript, created an automated program to scrape statistics from 
@@ -90,7 +91,7 @@
                         <li class="proj-skill">javascript</li>
                     </ul>
                 </div>
-                <img loading=lazy class="project-subpic" src="assets/football_betting.png">
+                <img id="football-desktop" loading=lazy class="project-subpic" src="assets/football_betting.png">
             </section>
             
         </main>
@@ -112,7 +113,7 @@
                 </ul>
             </div>
             
-            <div class="footer-center">
+            <div class="footer-center" id="footer-links">
                 <ul class="footer-link-list">
                     <li class="footer-link"><a href="index.html">home</a></li>
                     <li class="footer-link"><a href="about.html">about</a></li>

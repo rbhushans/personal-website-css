@@ -11,7 +11,7 @@
         <link rel="manifest" href="/site.webmanifest">
         <link rel="stylesheet" href="styles/home.css" type="text/css">
     </head>
-    <body>
+    <body id="experience">
         <header>
             <a href="index.html">
                 <img src="android-chrome-192x192.png" height="100" width="100">
@@ -20,9 +20,8 @@
                 <ul id="header-ul">
                     <li class="header-li"><a href="about.html">about</a></li>
                     <li class="header-li"><a href="projects.html">personal projects</a></li>
-                    <li class="header-li"><a href="experience.html">experience</a></li>
+                    <li class="header-li header-select"><a href="experience.html">experience</a></li>
                     <li class="header-li"><a href="contact.html">contact</a></li>
-                    <li class="header-li"></li>
                 </ul>
             </nav>
         </header>
@@ -50,11 +49,13 @@
 
             <h2 class="exp-title">work experience</h2>
             <hr />
+            
             <section class="exp-work">
                 <img class="exp-subpic" src="assets/amazon_logo_1_.png">
                 <div class="exp-block">
                     <h3 class="exp-block-title">SDE Intern</h3> 
-                    <p><b>Amazon</b></p>
+                    <p><i>Amazon</i></p>
+                    <p>Incoming SDE Intern for Amazon for the summer of 2021</p>
                 </div>
                 <p class="exp-date">Summer 2021</p>
             </section>
@@ -64,6 +65,7 @@
                 <div class="exp-block">
                     <h3 class="exp-block-title">Business Systems Analyst</h3>
                     <p><i>UCSD Health</i></p>
+                    <p class="exp-date-mobile">July 2020 - Present</p>  
                     <details class="exp-block-desc">
                         <summary>Details</summary>
                         <ul>
@@ -81,21 +83,23 @@
                             </li>
                         </ul>
                     </details>
+                    <ul class="exp-skill-list">
+                        <li class="exp-skill">python</li>
+                        <li class="exp-skill">tableau</li>
+                        <li class="exp-skill">applescript</li>
+                    </ul>
                 </div>
-                <p class="exp-date">July 2020 - Present</p>
+                <p class="exp-date">July 2020 - Present</p>                
             </section>
 
-            <ul class="exp-skill-list">
-                <li class="exp-skill">python</li>
-                <li class="exp-skill">tableau</li>
-                <li class="exp-skill">applescript</li>
-            </ul>
+           
     
             <section class="exp-work">
                 <img class="exp-subpic" src="assets/ucsd-cse.gif">
                 <div class="exp-block">
                     <h3 class="exp-block-title">Tutor/Head Tutor</h3>
                     <p><i>UCSD Computer Science and Engineering Department</i></p>
+                    <p class="exp-date-mobile">September 2019 - December 2020</p>
                     <details class="exp-block-desc">
                         <summary>Details</summary>
                         <p>September 2019 - December 2020</p>
@@ -113,22 +117,24 @@
                             </li>
                         </ul>
                     </details>
+                    <ul class="exp-skill-list">
+                        <li class="exp-skill">java</li>
+                        <li class="exp-skill">python</li>
+                        <li class="exp-skill">c</li>
+                        <li class="exp-skill">arm</li>
+                    </ul>
                 </div>
                 <p class="exp-date">September 2019 - December 2020</p>
             </section>
 
-            <ul class="exp-skill-list">
-                <li class="exp-skill">java</li>
-                <li class="exp-skill">python</li>
-                <li class="exp-skill">c</li>
-                <li class="exp-skill">arm</li>
-            </ul>
+            
                 
             <section class="exp-work">
                 <img class="exp-subpic" src="assets/lyftly.jpeg">
                 <div class="exp-block">
                     <h3 class="exp-block-title">Software Engineering Intern</h3>
                     <p><i>Lyftly</i></p>
+                    <p class="exp-date-mobile">July 2020 - October 2020</p>  
                     <details class="exp-block-desc">
                         <summary>Details</summary>
                         <p>July 2020 - October 2020</p>
@@ -143,16 +149,15 @@
                             </li>
                         </ul>
                     </details>
+                    <ul class="exp-skill-list">
+                        <li class="exp-skill">reactJS</li>
+                        <li class="exp-skill">nodeJS</li>
+                        <li class="exp-skill">javascript</li>
+                        <li class="exp-skill">python</li>
+                    </ul>
                 </div>
-                <p class="exp-date">July 2020 - October 2020</p>
+                <p class="exp-date">July 2020 - October 2020</p>     
             </section>
-
-            <ul class="exp-skill-list">
-                <li class="exp-skill">reactJS</li>
-                <li class="exp-skill">nodeJS</li>
-                <li class="exp-skill">javascript</li>
-                <li class="exp-skill">python</li>
-            </ul>
         </main>
 
         <br />
@@ -174,7 +179,7 @@
                 </ul>
             </div>
             
-            <div class="footer-center">
+            <div class="footer-center" id="footer-links">
                 <ul class="footer-link-list">
                     <li class="footer-link"><a href="index.html">home</a></li>
                     <li class="footer-link"><a href="about.html">about</a></li>
