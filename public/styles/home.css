@@ -4,6 +4,9 @@
     --header-bar-color: #006E90;
     --page-bg-color: white;
     --skill-color: rgb(96, 127, 192);
+    --title-font: 'Poppins', 'sans-serif';
+    --subtitle-font: 'Montserrat', 'sans-serif';
+    --body-font: 'Lato', 'sans-serif';
 }
 
 #home{
@@ -19,6 +22,7 @@ header {
     background-color: var(--page-bg-color);
     padding: 10px;
     z-index: 1;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -51,7 +55,7 @@ nav {
     background-color: #004a61;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     #header-ul {
         display: flex;
         flex-direction: row;
@@ -73,7 +77,7 @@ nav {
 
     .header-li a {
         padding: 8px 10px;
-        font-size: 20px;
+        font-size: 23px;
         text-decoration: none;
         flex-grow: 1;
         align-self: center;
@@ -92,6 +96,10 @@ nav {
     #header-logo {
         width: 25vw;
         height: 25vw;
+    }
+
+    .header-li a {
+        font-size: 15px;
     }
 }
 
@@ -135,11 +143,13 @@ nav {
 .home-subdescrip {
     font-size: 1.7em;
     font-size: 1.5vw;
+    font-family: var(--body-font);
 }
 
 .home-subtitle {
     font-size: 2.5em;
     font-size: 3.5vw;
+    font-family: var(--subtitle-font);
 }
 
 .long-pic {
@@ -237,6 +247,7 @@ footer {
     vertical-align: center;
     padding-bottom: 1%;
     background-color: var(--page-bg-color);
+    font-family: var(--body-font);
 }
 
 .footer-center {
@@ -268,6 +279,7 @@ footer {
     color:#000000;
     text-align:center;
     transition: all 0.2s;
+    font-family: var(--body-font);
 }
 
 @media (hover: hover){
@@ -319,12 +331,15 @@ html, body {
     border: white solid 5px;
     background: rgba(0, 0, 0, 0.507);
     max-height: 300px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 #intro-name {
     font-size: 20em;
     font-size: 3.5vw;
+    font-weight: bolder;
+    color: rgb(131, 247, 255);
 } 
 
 #home-background {
@@ -359,11 +374,13 @@ html, body {
         font-size: 4vw;
         animation-duration: 3s;
         border: white solid;
+        max-height: none;
     }
     
     #home-intro {
         height: 100%;
     }
+
     #intro-name {
         font-size: 20em;
         font-size: 10vw;
@@ -397,6 +414,16 @@ html, body {
     align-self: flex-start;
 }
 
+.about-me-text > h2 {
+    font-family: var(--subtitle-font);
+    border-left: var(--header-bar-color) solid;
+    padding-left: 10px;
+}
+
+.about-me-text > * {
+    font-family: var(--body-font);
+}
+
 #interests-hobbies > :nth-child(odd){
     display: block;
     font-weight: bold;
@@ -414,12 +441,12 @@ html, body {
         margin-right: 0 !important;
     } 
 
-    #about-me-first {
-        flex-direction: column-reverse;
-    }
-
     .about-me-block{
         flex-direction: column;
+    }
+
+    #about-me-first {
+        flex-direction: column-reverse;
     }
 }
 
@@ -438,6 +465,10 @@ html, body {
 .title {
     margin-top: 150px;
     margin-left: 2%;
+    font-family: var(--title-font);
+    font-weight: bolder;
+    width: 100%;
+    border-bottom:  var(--header-bar-color) solid;
 }
 
 .project-card {
@@ -476,11 +507,13 @@ html, body {
 .project-title {
     font-size: 3vw;
     align-self: flex-start;
+    font-family: var(--subtitle-font);
 }
 
 .project-description {
     font-size: 2vw;
     padding-bottom: 3%;
+    font-family: var(--body-font);
 }
 
 .project-subpic{
@@ -501,6 +534,7 @@ html, body {
     align-items: flex-start;
     margin-left: 1%;
     margin-top: 0;
+    font-family: var(--body-font);
 }
 
 .proj-skill {
@@ -524,6 +558,7 @@ html, body {
 
 .descrip {
     margin-left: 2%;
+    font-family: var(--body-font);
 }
 
 #football-mobile{
@@ -643,6 +678,12 @@ html, body {
     padding: 20px;
 }
 
+.exp-title {
+    font-family: var(--subtitle-font);
+    border-left: var(--header-bar-color) solid;
+    padding-left: 10px;
+}
+
 @media (hover: hover){
     .exp-work:hover {
     border-radius: 0% 0% 0% 0% / 0% 0% 5% 5% ;
@@ -719,11 +760,21 @@ details p, details ul {
     padding-top: 1rem;
 }
 
+.exp-block-title {
+    font-family: var(--subtitle-font);;
+}
+
+.exp-block > * {
+    font-family: var(--body-font);
+}
+
 .exp-date {
     flex-grow: 1;
     max-width: 20%;
     padding: 2%;
     padding-right: 4%;
+    font-family: var(--body-font);
+    font-style: oblique;
 }
 
 .exp-skill-list {
@@ -851,7 +902,6 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: left;
     background-color: rgb(215, 241, 255);
     padding: 20px;
     border-radius: 10px;
