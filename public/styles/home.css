@@ -363,7 +363,11 @@ html, body {
 @media screen and (max-width: 800px){
     #intro-text{
         margin-top: 20%;
-        font-size: 4vw;
+        font-size: 3vw;
+    }
+
+    #intro-name {
+        font-size: 6vw;
     }
 }
 
