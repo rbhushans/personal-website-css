@@ -354,7 +354,7 @@ footer {
     padding-top: 2%;
     margin-top: 80px;
     font-size: 10em;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     color: white;
     animation: fadein;
     animation-duration: 2s;
@@ -364,13 +364,15 @@ footer {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 2%;
+    padding: 80px 2%;
+    
     width: 80%;
     border: white solid 5px;
     background: rgba(0, 0, 0, 0.507);
-    max-height: 300px;
+    max-height: 350px;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 
 #intro-name {
@@ -378,6 +380,8 @@ footer {
     font-size: 3.5vw;
     font-weight: bolder;
     color: rgb(131, 247, 255);
+    display: block;
+    margin: 10px 0px;
 } 
 
 #home-background {
@@ -421,7 +425,6 @@ footer {
         animation-duration: 3s;
         border: white solid;
         max-height: none;
-        margin-top: none;
     }
     
     #home-intro {
