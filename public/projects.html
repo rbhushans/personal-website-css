@@ -16,16 +16,26 @@
     <body id="projects">
         <header>
             <a href="index.html">
-                <img src="android-chrome-192x192.png" height="100" width="100" alt="header-logo">
+                <img id="header-logo" src="android-chrome-192x192.png" height="100" width="100" alt="header-logo">
             </a>
             <nav>
                 <ul id="header-ul">
                     <li class="header-li"><a href="about.html">about</a></li>
-                    <li class="header-li header-select"><a href="projects.html">personal projects</a></li>
+                    <li class="header-li"><a href="projects.html">personal projects</a></li>
                     <li class="header-li"><a href="experience.html">experience</a></li>
-                    <li class="header-li"><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
+            <div id="menuToggle">
+                <label id="menu-icon" for="fake-checkbox">
+                    <img src="assets/menu_icon.png" height="70" width="70" alt="Menu Icon">
+                </label>
+                <input autocomplete="off" id="fake-checkbox" type="checkbox"/>
+                <ul id="menu">
+                    <li class="drop-li"><a href="about.html">about</a></li>
+                    <li class="drop-li"><a href="projects.html">personal projects</a></li>
+                    <li class="drop-li"><a href="experience.html">experience</a></li>
+                </ul>
+            </div>
         </header>
 
         <h1 class="title">personal projects</h1>
@@ -112,7 +122,7 @@
                 </picture>
                 <div class="project-text">
                     <h2 class="project-title">Football Analytics and Odds Web Scraper</h2>
-                    <p class="project-description">Using JavaScript, created an automated program to scrape statistics from 
+                    <p class="project-description">Using JavaScript, <bar-chart>hello</bar-chart>created an automated program to scrape statistics from 
                         various websites, the odds for each game, and update scores hourly.
                     </p>
                     <ul class="proj-skill-list">
@@ -139,6 +149,11 @@
                     <li class="footer-link">
                         <a href="https://github.com/rbhushans" target="_blank">
                             <img src="assets/25231.png" height="40" width="40" alt="GitHub Logo">
+                        </a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="mailto:rsbhusha@ucsd.edu" target="_blank">
+                            <img src="assets/Email-Icon.png" height="50" width="50" alt="Email Icon">
                         </a>
                     </li>
                 </ul>
