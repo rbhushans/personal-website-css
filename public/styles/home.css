@@ -1,4 +1,19 @@
 /* common among files */
+@font-face{
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Regular.ttf')
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url('../fonts/Poppins-Regular.ttf')
+}
+
+@font-face{
+    font-family: Lato;
+    src: url('../fonts/Lato-Regular.ttf')
+}
+
 :root{
     --block-bg-color: #e7f7ff;
     --block-hover-color: #d5e9ff;
@@ -364,8 +379,7 @@ footer {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    padding: 80px 2%;
-    
+    padding: 60px 2%;
     width: 80%;
     border: white solid 5px;
     background: rgba(0, 0, 0, 0.507);
@@ -373,15 +387,13 @@ footer {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 #intro-name {
     font-size: 20em;
     font-size: 3.5vw;
     font-weight: bolder;
     color: rgb(131, 247, 255);
     display: block;
-    margin: 10px 0px;
+    margin: 30px 0px;
 } 
 
 #home-background {
