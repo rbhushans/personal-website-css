@@ -425,7 +425,7 @@ footer {
     }
 
     #home-intro {
-        margin-top: 200px;
+        margin-top: 100px;
     }
 }
 
@@ -454,28 +454,38 @@ footer {
 /* end of home styles */
 
 #about-grid {
-    display: flex;
-    flex-direction: column;
-    margin: 2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 80%;
+    justify-content: end;
+    margin: auto;
 }
 
-.about-me-block {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+#about-headshot {
+    grid-area: 1/1/1/1;
+}
+
+#about-first {
+    grid-area: 1/2/1/2;
+    padding-left: 5%;
+}
+
+#about-second {
+    grid-area: 2/1/2/1;
+    padding-right: 5%;
+}
+
+#about-brownies {
+    grid-area: 2/2/2/2;
 }
 
 .about-me-pic {
-    flex-grow: 1;
-    width: 50vw;
-    max-width: 100%;
-    max-width: 400px;
-    min-width: 300px;
+    width: 40vw;
+    max-width: 600px;
 }
 
 .about-me-text {
-    flex-grow: 3;
-    padding: 2%;
     align-self: flex-start;
 }
 
@@ -483,11 +493,11 @@ footer {
     font-family: var(--subtitle-font);
     border-left: var(--header-bar-color) solid;
     padding-left: 10px;
-    font-size: max(30px, 2vw);
+    font-size: max(40px, 2vw);
 }
 
 .about-me-text > p {
-    font-size: max(15px, 1vw);
+    font-size: max(15px, 1.2vw);
 }
 
 .about-me-text > * {
@@ -503,23 +513,48 @@ footer {
 #interests-hobbies > :nth-child(even){
     display: block;
     margin-bottom: 30px;
-    font-size: max(15px, 1vw);
+    font-size: max(15px, 1.2vw);
 }
 
 @media screen and (max-width: 700px){
+    #about-grid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        justify-items: center;
+    }
+
+    #about-headshot {
+        grid-area: 1/1/1/1;
+    }
+
+    #about-first {
+        grid-area: 2/1/2/1;
+    }
+
+    #about-second {
+        grid-area: 4/1/4/1;
+    }
+
+    #about-brownies {
+        grid-area: 3/1/3/1;
+        margin-top: 30px;
+    }
+
+    .about-me-text > p {
+        font-size: max(20px, 1vw);
+    }
+
+    #interests-hobbies > :nth-child(even){
+        display: block;
+        margin-bottom: 30px;
+        font-size: max(20px, 1vw);
+    }
+
     .about-me-pic{
         width: 200vw;
         max-width: 100%;
-        margin-right: 0 !important;
     } 
-
-    .about-me-block{
-        flex-direction: column;
-    }
-
-    #about-me-first {
-        flex-direction: column-reverse;
-    }
 
     #interests-hobbies > :nth-child(odd){
         font-size: 4vw;
@@ -544,7 +579,7 @@ footer {
     font-weight: bolder;
     width: 90%;
     border-bottom:  var(--header-bar-color) solid;
-    font-size: max(30px, 2vw);
+    font-size: max(40px, 2.5vw);
 }
 
 .project-card {

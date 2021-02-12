@@ -27,7 +27,7 @@
                 <label id="menu-icon" for="fake-checkbox">
                     <img src="assets/menu_icon.png" height="70" width="70" alt="Menu Icon">
                 </label>
-                <input autocomplete="off" id="fake-checkbox" type="checkbox"/>
+                <input id="fake-checkbox" type="checkbox"/>
                 <ul id="menu">
                     <li class="drop-li"><a href="about.html">about</a></li>
                     <li class="drop-li"><a href="projects.html">personal projects</a></li>
@@ -39,45 +39,41 @@
         <h1 class="title">about</h1>
 
         <main id="about-grid">
-            <section class="about-me-block" id="about-me-firstxs">
-                <picture >
-                    <source media="(min-width: 900px)" srcset="assets/headshot.JPG">
-                    <img class="about-me-pic" src="assets/headshot_medium.jpg" alt="Rohan Portrait">
-                </picture>
-                <div class="about-me-text">
-                    <h2>about me</h2>
-                    <p>I'm currently a third year undergraduate computer science student 
-                        at University of California, San Diego. I have detailed experience in coding
-                        in Java, C, C++, JavaScript, and Python. My expected graduation is 
-                        December 2021. I'm currently working as a Business Systems Analyst with UCSD Health,
-                        working on various applications using Python, AppleScript, and Tableau. I have also accepted
-                        a summer position as a SDE Intern at Amazon.
-                    </p>
-                </div>
-            </section>
+            <picture>
+                <source media="(min-width: 900px)" srcset="assets/headshot.JPG">
+                <img class="about-me-pic" id="about-headshot" src="assets/headshot_medium.jpg" alt="Rohan Portrait">
+            </picture>
+            <div class="about-me-text" id="about-first">
+                <h2>about me</h2>
+                <p>I'm currently a third year undergraduate computer science student 
+                    at University of California, San Diego. I have detailed experience in coding
+                    in Java, C, C++, JavaScript, and Python. My expected graduation is 
+                    December 2021. I'm currently working as a Business Systems Analyst with UCSD Health,
+                    working on various applications using Python, AppleScript, and Tableau. I have also accepted
+                    a summer position as a SDE Intern at Amazon.
+                </p>
+            </div>
             
-            <section class="about-me-block">
-                <div class="about-me-text">
-                    <h2>interests and hobbies</h2>
-                    <ul id="interests-hobbies">
-                        <li>football</li>
-                        <li>I'm a huge Ravens fan, annd love to watch football whenever its on. 
-                            Specifically, I love to explore advanced statistics like EPA, CPOE, 
-                            and DVOA.
-                        </li>
-                        <li>chess</li>
-                        <li>Chess has been a consistent interest of mine, and I enjoy exploring different
-                            strategies and openings.</li>
-                        <li>baking</li>
-                        <li>I'm the vice president and co-founder of the baking club at UCSD.</li>
-                    </ul>
-                </div>
-                <picture >
-                    <source media="(min-width: 900px)" srcset="assets/brownies.jpeg">
-                    <source media="(min-width: 540px)" srcset="assets/brownies_medium.jpeg">
-                    <img class="about-me-pic" src="assets/brownies_small.jpeg" alt="Rohan Portrait">
-                </picture>
-            </section>
+            <div class="about-me-text" id="about-second">
+                <h2>interests and hobbies</h2>
+                <ul id="interests-hobbies">
+                    <li>football</li>
+                    <li>I'm a huge Ravens fan, and love to watch football whenever its on. 
+                        Specifically, I love to explore advanced statistics like EPA, CPOE, 
+                        and DVOA.
+                    </li>
+                    <li>chess</li>
+                    <li>Chess has been a consistent interest of mine, and I enjoy exploring different
+                        strategies and openings in my free time.</li>
+                    <li>baking</li>
+                    <li>I'm the vice president and co-founder of the baking club at UCSD.</li>
+                </ul>
+            </div>
+            <picture>
+                <source media="(min-width: 900px)" srcset="assets/brownies.jpeg">
+                <source media="(min-width: 540px)" srcset="assets/brownies_medium.jpeg">
+                <img class="about-me-pic" id="about-brownies" src="assets/brownies_small.jpeg" alt="Rohan Portrait">
+            </picture>
         </main>
 
         <footer>
